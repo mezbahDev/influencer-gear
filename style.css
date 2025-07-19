@@ -15,13 +15,13 @@
 
 body {
   font-family: "poppins";
-  margin: 2rem 10rem;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  padding: 2rem 10rem;
 }
 
 ul {
@@ -141,6 +141,12 @@ a {
   padding: 0 10rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* popular section style */
 
 .popular {
@@ -204,13 +210,69 @@ a {
   font-weight: 700;
 }
 
-@media screen and (max-width: 576px) {
-  body {
-    margin: 1rem 1rem;
-  }
+/* join section style */
+.join {
+  margin-top: 100px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
 
+.join-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.join-txt h1 {
+  font-size: 2.2rem;
+  color: #0a0826;
+}
+
+.join-btn {
+  border-radius: 0;
+  width: 155px;
+}
+
+.gear {
+  width: 100%;
+  border-radius: 7px;
+}
+
+/* footer section style */
+
+footer {
+  background-color: #0a0826;
+  color: #ffffff;
+  margin-top: 100px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-section {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+@media screen and (max-width: 576px) {
   .logo {
     font-size: 1.2rem;
+  }
+
+  .header {
+    padding: 1rem 1rem;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .menu {
@@ -343,4 +405,37 @@ a {
     gap: 30px;
   }
 
+  .popular-btn {
+    margin: 0;
+  }
+
+  /* join section style */
+  .join {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .join-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .join-txt h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 310px;
+  }
+
+  .join-txt p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 310px;
+    color: #6c6c6c;
+  }
+
+  .join-btn {
+    margin-top: 20px;
+  }
 }
