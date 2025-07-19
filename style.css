@@ -132,12 +132,76 @@ a {
 
 /* link section style */
 
-.link{
+.link {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin-top: 100px;
   padding: 0 10rem;
+}
+
+/* popular section style */
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 50px;
+}
+
+.popular .title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.section {
+  max-width: 330px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.section img {
+  border-radius: 5px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.price {
+  font-weight: 24px;
+  font-weight: 400;
+}
+
+.star-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text {
+  max-width: 196px;
+  font-size: 0.9rem;
+}
+
+.popular-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.popular-btn {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  background-color: transparent;
+  color: var(--primary-color);
+  gap: 1rem;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {
@@ -209,4 +273,74 @@ a {
   .camera {
     width: 100%;
   }
+
+  /* link style  */
+
+  .link {
+    display: flex;
+    margin: 0 auto;
+    gap: 1rem;
+    margin-top: -2rem;
+    max-width: 270px;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .link img {
+    width: 50px;
+    height: 15px;
+  }
+
+  /* popular section style */
+
+  .popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 50px;
+  }
+
+  .popular .title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .section {
+    max-width: 330px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .section img {
+    border-radius: 5px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .price {
+    font-weight: 24px;
+    font-weight: 400;
+  }
+
+  .star-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .text {
+    max-width: 196px;
+    font-size: 0.9rem;
+  }
+
+  .popular-item {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
 }
